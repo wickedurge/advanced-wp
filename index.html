@@ -144,7 +144,7 @@
 
                 <section>
                     <h3>Today we're going to use Desktop Server</h3>
-                    
+
                     <ol>
                         <li> Visit  <a href="https://serverpress.com/">https://serverpress.com/</a></li>
                         <li>Scroll down about halfway and click the “Free - add to cart button"</li>
@@ -164,27 +164,27 @@
                    <li>Fill out the WordPress installation form (super easy).</li>
                        </ol>
                 </section>
-                
+
                 <section>
                     <h3>Let's install the  WordPress theme that we'll be using in this course</h3>
                     <p>You'll find a zip file in your course files</p>
                 </section>
-                
+
             </section>
 
-           
+
            <section> <!--Making something-->
-              
+
               <section>
-                  
+
                <h3>Let's start with a simple photo blog site</h3>
                <p>In your course files you'll see a folder called basic-html. Open the index.html you find there.</p>
-           
+
               </section>
            <section>
                <h3>We're going to duplicate a site like this in WordPress</h3>
            </section>
-           
+
                   <section>
                     <h3>Exercise!</h3>
                     <p>Let's use our first WordPress function!</p>
@@ -198,7 +198,7 @@
                    <p>Add three new pages to your WordPress site</p>
                    <p>Now add a nav menu</p>
                </section>
-               
+
                <section>
                    <h3>Add the wp_nav_menu function</h3>
                    <p>Open header.php</p>
@@ -208,15 +208,15 @@
                        </code>
                    </pre>
                </section>
-               
-               
+
+
                 <section>
                     <h3>Let's break down that function we just used:</h3>
                     <pre>
                        <code>
                            &lt;? php wp_nav_menu (); ?>
                        </code>
-                       
+
                    </pre>
                     <p>So we're opening PHP, writing in our function and then closing PHP.</p>
                     <p>What's up with the parantheses?</p>
@@ -241,15 +241,15 @@
                     <h3>Exercise: using arguments with functions</h3>
                     <p>Let's add another menu, this time only include two of your pages. Be sure to give it a distinctive name.</p>
                 </section>
-                
+
                  <section>
                     <h3>Modifying our existing function</h3>
                     <p>Add a filter that specifies which menu to load</p>
                 </section>
-           
+
            </section>
-           
-           
+
+
             <section>
                 <!-- Syntax Section-->
                 <section>
@@ -325,15 +325,15 @@
                 <section>
                     <h3>Let's talk functions</h3>
                     <p>A function is a single line of code that is used to replace a bunch of instructions.</p>
-                    <img src="/images/function.jpg" alt="">
+                    <img src="images/function.jpg" alt="">
                 </section>
 
                 <section>
                     <h3>Exercise! Let's write our first function</h3>
                     <pre>
                         <code>
-&lt;?php function writeMessage() 
-                       { echo "Hello World!"; } 
+&lt;?php function writeMessage()
+                       { echo "Hello World!"; }
                        writeMessage(); ?>
                         </code>
                     </pre>
@@ -351,7 +351,7 @@
 
                 <section>
                     <h3>Exercise: Our first array</h3>
-                    
+
                     <code>
                         <pre>
 &lt;?php
@@ -370,7 +370,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                     <h3>Let's talk about errors...</h3>
                     <p>One of the biggest gripes about PHP is how it handles errors. Or rather, how it doesn't handle errors.</p>
                     <!--demonstration: missing a semi-colon-->
-                    <img src="/images/Computer-Error-Fixing.jpg" alt="">
+                    <img src="images/Computer-Error-Fixing.jpg" alt="">
                 </section>
 
                 <section>
@@ -379,13 +379,13 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
 
                 <section>
                     <h3>Public Service Announcement: Code Safely!</h3>
-                    <img src="/images/dangerously.jpg" alt="">
+                    <img src="images/dangerously.jpg" alt="">
                 </section>
 
                 <section>
                     <h3>Don't be a cowboy(or cowgirl) coder!</h3>
                     <p>This is someone who is working on a live website without a safety net. <strong>This is really bad!</strong></p>
-                    <img src="/images/three-amigos-1323716077.jpg" alt="">
+                    <img src="images/three-amigos-1323716077.jpg" alt="">
                 </section>
 
                 <section>
@@ -437,7 +437,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                 <section>
                     <h3>Let's go back to the codex</h3>
                     <p>The codex is like a WordPress developer's handbook, rosetta stone, and bible all in one.</p>
-                    
+
                     <ul>
                         <li>Handbook: It explains the basics of using a WordPress site</li>
                         <li>Rosetta Stone: it helps you make sense of WordPress's developer features like functions.</li>
@@ -466,7 +466,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                     <h3>Before we start getting into the loop, let's begin with an analogy</h3>
                     <p>Next time you're in your shower, look at your shampoo bottle and read the instructions. Some of them say "lather, rinse, repeat".</p>
                     <p>What would happen if someone took that literally?</p>
-                    <img src="/images/shampoo.jpg" alt="">
+                    <img src="images/shampoo.jpg" alt="">
                 </section>
 
                 <section>
@@ -480,8 +480,8 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                     <pre>
                         <code class="php">
 &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        
- 
+
+
 
  	&lt;div class="entry">
  		&lt;?php the_content(); ?>
@@ -507,7 +507,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                     <p>This starts the Loop, it's saying "if you have some posts, go get them ready, we're going to to something with them</p>
                 </section>
 
-                
+
 
                 <section>
                     <h3>Wrapping up the loop...</h3>
@@ -530,7 +530,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
 
                 <section>
                     <h3>Exercise: let's add a loop</h3>
-                    
+
                 </section>
 
                 <section>
@@ -547,7 +547,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                         <li>Add 4 more posts, two in each category</li>
                     </ol>
                 </section>
-                
+
                 <section>
                     <h3>Now for the filter...</h3>
                     <ol>
@@ -556,18 +556,18 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                         <li>Pat self on back</li>
                     </ol>
                 </section>
-                
+
             </section>
 
             <section><!-- Theming-->
-               
-     
+
+
                <section>
-                   <h3>Theming</h3>    
+                   <h3>Theming</h3>
                 <p>Where it all comes together...</p>
                </section>
-  
-            
+
+
                    <section>
                     <h3>A theme is just a collection of a few PHP files and a CSS file</h3>
                 </section>
@@ -576,15 +576,15 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                     <h3>Child themes</h3>
                     <small>(and when to use them)</small>
                     <br>
-                    <img src="/images/child-theme-.jpg" alt="">
+                    <img src="images/child-theme-.jpg" alt="">
                 </section>
-            
-            
+
+
             <section>
                 <h3>WordPress has a hierarchy</h3>
                 <a href="http://wphierarchy.com/" target="_blank">http://wphierarchy.com/</a>
             </section>
-            
+
             </section><!--Theming-->
 
             <section>
@@ -592,7 +592,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                 <p>Start with an HTML file and convert it</p>
             </section>
 
-         
+
 
 
 
@@ -607,28 +607,28 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
                 <h3>Advanced Custom Fields</h3>
                 <a href="http://www.advancedcustomfields.com">The easiest way to add custom fields</a>
             </section>
-            
+
             <section>
             <h3>Advanced Custom Fields (ACF)</h3>
             <p>Everybody uses this thing... Here's why!</p>
             </section>
-            
+
             <section>
                 <h3>Let's say we want to add a description to our photos</h3>
                 <p>We could use the WordPress content section, but the formatting is wonky</p>
                 <small>WordPress wraps everything in a &lt;p> tag...</small>
             </section>
-            
+
             <section>
                 <h3>ACF to the rescue!</h3>
                 <p>It let's you make areas that do one thing really well for your WordPress theme</p>
             </section>
-     
+
             <section>
                 <h3>The truth is you don't need ACF to do this</h3>
                 <p>You can do all of this in the WordPress theme files like function.php, but it's not worth the effort.</p>
             </section>
-                          
+
             <section>
                 <h3>Metabox.io</h3>
                 <a href="https://metabox.io">For when you need to add lots of fields at once</a>
@@ -643,7 +643,7 @@ echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
 
             <section>
                 <h3>How strong is your Google-Fu?</h3>
-                <img src="/images/google-fu.jpg" alt="">
+                <img src="images/google-fu.jpg" alt="">
                 <small>You're almost never the first person to have this problem (no matter what the problem is)</small>
             </section>
 
