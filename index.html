@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Girl Develop It ~ Teacher Training</title>
+    <title>Girl Develop It ~ Advanced WordPress with PHP</title>
 
-    <meta name="description" content="This is a teacher training, an opportunity to share information about Girl Develop It with new teachers, as well as an opportunity to improve our public speaking skills through several exercises. Original curriculum developed by Laura Eagin for the Detroit chapter of GDI">
+    <meta name="description" content="This is an introduction to basic WordPress development designed for helping students with little to no PHP experience.">
 
     <meta name="author" content="Girl Develop It">
 
@@ -56,7 +56,9 @@
             <section>
                 <h3>Who am I, and why should you listen to me?</h3>
                 <p>I'm a full time Front End developer at <a href="push22.com">Push 22</a>who has been working with WordPress for about 4 years.</p>
-                <p>I'm not a computer scientist, my background is actually in rhetoric, philosophy and biology. I learned WordPress through trial and error, insane deadlines, and lots of Googling.</p>
+                <p>I'm not a computer scientist, my background is actually in rhetoric, philosophy and biology. I learned WordPress through trial and error (mostly errors), insane deadlines, and lots of Googling.</p>
+
+
             </section>
 
 
@@ -67,7 +69,7 @@
                     <li>Coding Safety</li>
                     <li>The WordPress Codex</li>
                     <li>The loop</li>
-                    <li>Some handy plugins (time permitting)</li>
+                    <li>Some handy plugins</li>
                 </ul>
             </section>
 
@@ -82,7 +84,7 @@
                 </section>
 
                 <section>
-                    <h3>PHP can do a lot of cool stuff, it's used on about of 80% of the internet. A big chunk of that is Wordpress</h3>
+                    <h3>PHP is just about everywhere</h3>
                     <small>Trivia to impress your friends:Facebook is built in PHP</small>
                 </section>
 
@@ -93,6 +95,7 @@
                 <section>
                     <h3>Think of WordPress like an automotive factory</h3>
                     <ul>
+                        <li>Linux and Apache are the foundation</li>
                         <li>The MySQL database is where the raw materials are kept</li>
                         <li>CSS is where the paint and styling is applied</li>
                         <li>PHP is the robots and workers who put all of the parts together before they go to be painted</li>
@@ -101,9 +104,9 @@
 
                 <section>
                     <h3>Why do we use PHP and not just straight HTML?</h3>
-                    <p>While PHP can be a bit of a pain at first, it also is a huge time saver. One of the simplest examples of this is a navigation area on a website.</p>
+                    <p>While PHP can be a bit of a pain at first, it also is a huge time saver.</p>
                     <pre>
-                    <code>
+                    <code class="html">
                       &lt;ul>
                           &lt; li>&lt; a href="./"> Home &lt;/a>/li>
                           &lt; li>&lt; a href="./about"> About&lt;/li>
@@ -112,7 +115,7 @@
                       &lt;/ul>
                     </code>
                   </pre>
-                    <p>So on a four page website, you would have to dump something like this at the top of every page. And, if you ever wanted to update your navigation, you'd have to go through and manually correct every single page.</p>
+
                 </section>
 
                 <section>
@@ -135,31 +138,123 @@
                 <!--Desktop Server Setup -->
                 <section>
 
-                    <h3>Before we can start coding we need to set up our computers for WordPress</h3>
+                    <h3>Getting ready for WordPress</h3>
                     <p>WordPress/PHP require more special software to make them "go" than plain HTML does. Usually this software is run on a dedicated web server, but today we're going to run it on our computers directly.</p>
                 </section>
 
                 <section>
-                    <h3>There's a lot of ways to do this, but today we're going to use Desktop Server (also called ServerPress)</h3>
-                    <a href="https://serverpress.com/">https://serverpress.com/</a>
-                    <p>Go ahead and download the free edition. Run the installation file when you're done.</p>
+                    <h3>Today we're going to use Desktop Server</h3>
+                    
+                    <ol>
+                        <li> Visit  <a href="https://serverpress.com/">https://serverpress.com/</a></li>
+                        <li>Scroll down about halfway and click the “Free - add to cart button"</li>
+                        <li>Fill in your information on the form (they do require an email address)</li>
+                        <li>Agree to the terms and click the purchase button (it’ll be $0.00)</li>
+                        <li>You’ll redirect to a new page with a list of download links, choose the one that matches your computer’s operating system</li>
+                        <li> Download and run the installer program</li>
+                    </ol>
                 </section>
                 <section>
                     <h3>Let's get this thing fired up!</h3>
-                    <p>Go ahead and open desktop server. It's going to ask you if you want to restart the program with permissions, say yes. If you're on a Mac you'll need to enter your computer's root password.</p>
+                    <ol>
+                  <li>Go ahead and open desktop server. It might ask you for your Computer's password.</li>
+                    <li>Now you want to start Apache and MySQL services.</li>
+                   <li>Now, start web services. And finally create a new development website. When it asks where your site root should go, choose a directory that's easy to navigate to.(Desktop is usually good)</li>
+                   <li>Click the WordPress install link when it appears</li>
+                   <li>Fill out the WordPress installation form (super easy).</li>
+                       </ol>
                 </section>
+                
                 <section>
-                    <p>Now you want to start Apache and MySQL services. These are two programs that need to be running in the background in order for WordPress and PHP to work.</p>
-                    <p>Go ahead and start web services. And finally create a new development website. When it asks where your site root should go, choose a directory that's easy to navigate to. I reccomend that for today you just use your desktop.</p>
-                    <p>Go ahead and click the link that DesktopServer creates to finish your WordPress installation.</p>
+                    <h3>Let's install the  WordPress theme that we'll be using in this course</h3>
+                    <p>You'll find a zip file in your course files</p>
                 </section>
+                
             </section>
 
+           
+           <section> <!--Making something-->
+              
+              <section>
+                  
+               <h3>Let's start with a simple photo blog site</h3>
+               <p>In your course files you'll see a folder called basic-html. Open the index.html you find there.</p>
+           
+              </section>
+           <section>
+               <h3>We're going to duplicate a site like this in WordPress</h3>
+           </section>
+           
+                  <section>
+                    <h3>Exercise!</h3>
+                    <p>Let's use our first WordPress function!</p>
+                    <p>Today we're going to start with one of the most common: wp_nav_menu</p>
+                    <p>Let's start by looking at that function on the WordPress codex.</p>
+                    <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="_blank"> wp-nav-menu</a>
+                </section>
+
+               <section>
+                   <h3>First let's make our menu in the WordPress backend</h3>
+                   <p>Add three new pages to your WordPress site</p>
+                   <p>Now add a nav menu</p>
+               </section>
+               
+               <section>
+                   <h3>Add the wp_nav_menu function</h3>
+                   <p>Open header.php</p>
+                   <pre>
+                       <code class="html">
+           &lt;? php wp_nav_menu (); ?>
+                       </code>
+                   </pre>
+               </section>
+               
+               
+                <section>
+                    <h3>Let's break down that function we just used:</h3>
+                    <pre>
+                       <code>
+                           &lt;? php wp_nav_menu (); ?>
+                       </code>
+                       
+                   </pre>
+                    <p>So we're opening PHP, writing in our function and then closing PHP.</p>
+                    <p>What's up with the parantheses?</p>
+
+                    <p>They're where we put in our arguments in the form of an array.</p>
+                    <p>Let's go back to the Codex and look at some arguments that are available for this function.</p>
+                </section>
+
+                <section>
+                    <h3>So how do arguments work?</h3>
+                    <p>Some arguments behave like filters: you use them to narrow data down to a specific category, or type.</p>
+                    <p>Other arguments are called booleans. This is computer science nerd for "true or false".</p>
+                </section>
+
+                <section>
+                    <h3>Let's go back to our wp_nav_menu function and add an argument</h3>
+                    <p>WordPress supports having multiple menus on the site. Let's use an argument to specify a menu called "main".</p>
+
+                </section>
+
+                <section>
+                    <h3>Exercise: using arguments with functions</h3>
+                    <p>Let's add another menu, this time only include two of your pages. Be sure to give it a distinctive name.</p>
+                </section>
+                
+                 <section>
+                    <h3>Modifying our existing function</h3>
+                    <p>Add a filter that specifies which menu to load</p>
+                </section>
+           
+           </section>
+           
+           
             <section>
                 <!-- Syntax Section-->
                 <section>
-                    <h3>Let's dig into some actual coding...</h3>
-                    <p>We're not going to start with an actual WordPress file quite yet, instead we're going to use a plain PHP file inside of our WordPress site.</p>
+                    <h3>Let's explain what just happened...</h3>
+                    <p>Time to understand PHP functions</p>
                 </section>
                 <section>
                     <h3>Navigate to your WordPress directory and create a new file called test.php</h3>
@@ -186,10 +281,6 @@
                 <section>
                     <h3>Congratulations! You've made your first PHP page!</h3>
                     <p>That wasn't so bad, now was it?</p>
-                </section>
-
-                <section>
-
                 </section>
 
                 <section>
@@ -232,16 +323,24 @@
                 </section>
 
                 <section>
-                    <h3>What's your function?</h3>
-                    <p>A funtion is a single line of code that is used to replace a bunch of instructions.</p>
+                    <h3>Let's talk functions</h3>
+                    <p>A function is a single line of code that is used to replace a bunch of instructions.</p>
+                    <img src="/images/function.jpg" alt="">
                 </section>
 
                 <section>
                     <h3>Exercise! Let's write our first function</h3>
+                    <pre>
+                        <code>
+&lt;?php function writeMessage() 
+                       { echo "Hello World!"; } 
+                       writeMessage(); ?>
+                        </code>
+                    </pre>
                 </section>
 
                 <section>
-                    <h3>Functions are an important part of WordPress, they're the backbone of building custom WordPress sites, but they're only half of the necessary ingredients.</h3>
+                    <h3>Functions are the backbone of WordPress</h3>
                     <p>The other thing we need to understand is arrays.</p>
                 </section>
 
@@ -252,6 +351,15 @@
 
                 <section>
                     <h3>Exercise: Our first array</h3>
+                    
+                    <code>
+                        <pre>
+&lt;?php
+$cats = array("tabby", "calico", "persian");
+echo "I like " . $cats[0] . ", " . $cats[1] . " and " . $cats[2] . ".";
+?>
+                        </pre>
+                    </code>
                 </section>
 
                 <!-- End of Day 1-->
@@ -260,17 +368,38 @@
 
                 <section>
                     <h3>Let's talk about errors...</h3>
-                    <p>One of my main gripes about PHP is how it handles errors. Or rather, how it doesn't handle errors.</p>
+                    <p>One of the biggest gripes about PHP is how it handles errors. Or rather, how it doesn't handle errors.</p>
                     <!--demonstration: missing a semi-colon-->
+                    <img src="/images/Computer-Error-Fixing.jpg" alt="">
                 </section>
 
                 <section>
-                    <h3>This brings us to an important topic before we get into more coding: WordPress Safety</h3>
+                    <h3>What to do when PHP gives you an error</h3>
+                </section>
+
+                <section>
+                    <h3>Public Service Announcement: Code Safely!</h3>
+                    <img src="/images/dangerously.jpg" alt="">
                 </section>
 
                 <section>
                     <h3>Don't be a cowboy(or cowgirl) coder!</h3>
                     <p>This is someone who is working on a live website without a safety net. <strong>This is really bad!</strong></p>
+                    <img src="/images/three-amigos-1323716077.jpg" alt="">
+                </section>
+
+                <section>
+                    <h3>The WordPress editor should be banned</h3>
+                </section>
+
+                <section>
+                    <h3>Have a dev site</h3>
+                    <p>A subdomain is probably the most common way of doing this.</p>
+                    <p>If you don't want to worry about a lot of server setup stuff, get a managed WordPress host like wp-engine</p>
+                </section>
+
+                <section>
+                    <h3>So what's the big deal?</h3>
                 </section>
 
                 <section>
@@ -291,72 +420,31 @@
                 <section>
                     <section>
 
-                        <h3>Some actual WordPress stuff</h3>
+                        <h3>Back to WordPress</h3>
                         <p>Now we're going to start working with building new pages and themes in WordPress</p>
-                        <p>This is where the class is going to be less about coding, and more about understanding.</p>
 
-                        <p>WordPress is huge. It's has has about 1000 built in functions, and you can always add more of your own. Obviously we can't cover all of them in great detail, so instead we're going to focus on learning how to use the tools that WordPress provides us with to solve problems.</p>
+                        <p>WordPress is huge.</p>
                     </section>
                 </section>
 
                 <section>
-                    <h3>Remember those functions we did earlier?</h3>
-                    <p>Well WordPress has a bunch of them already written for you...</p>
-                </section>
-
-                <section>
-                    <h3>Exercise!</h3>
-                    <p>Let's use our first WordPress function!</p>
-                    <p>Today we're going to start with one of the most common: wp_nav_menu</p>
-                    <p>Let's start by looking at that function on the WordPress codex.</p>
-                    <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="_blank"> wp-nav-menu</a>
-                </section>
-
-                <section>
-                    <h3>Let's break down that function we just used:</h3>
-                    <pre>
-                       <code>
-                           &lt;? php wp_nav_menu (); ?>
-                       </code>
-                       
-                   </pre>
-                    <p>So we're opening PHP, writing in our function and then closing PHP.</p>
-                    <p>What's up with the parantheses?</p>
-
-                    <p>They're where we put in our arguments in the form of an array.</p>
-                    <p>Let's go back to the Codex and look at some arguments that are available for this function.</p>
-                </section>
-
-                <section>
-                    <h3>So how do arguments work?</h3>
-                    <p>Some arguments behave like filters: you use them to narrow data down to a specific category, or type.</p>
-                    <p>Other arguments are called booleans. This is computer science nerd for "true or false".</p>
-                </section>
-
-                <section>
-                    <h3>Let's go back to our wp_nav_menu function and add an argument</h3>
-                    <p>WordPress supports having multiple menus on the site. Let's use an argument to specify a menu called "main".</p>
-
-                </section>
-
-                <section>
-                    <h3>Exercise: using arguments with functions</h3>
+                    <h3>Remember that wp_nav_function we used earlier?</h3>
+                    <p>There's plenty more where that came from...</p>
+                    <img src="images/moar-cat.jpg" alt="moar!">
                 </section>
 
 
                 <section>
-                    <h3>Let's go more in depth with the WordPress codex</h3>
+                    <h3>Let's go back to the codex</h3>
                     <p>The codex is like a WordPress developer's handbook, rosetta stone, and bible all in one.</p>
+                    
                     <ul>
                         <li>Handbook: It explains the basics of using a WordPress site</li>
                         <li>Rosetta Stone: it helps you make sense of WordPress's developer features like functions.</li>
                         <li>Bible: It also makes ethical arguments about how to code your pages, treat your users, and be a good developer in general.</li>
                     </ul>
                 </section>
-                <section>
 
-
-                </section>
 
             </section>
             <!--end WordPress intro section -->
@@ -370,14 +458,15 @@
                 </section>
 
                 <section>
-                    <h3>Let me be the first to say: the WordPress can be intimidating.</h3>
+                    <h3>Let me be the first to say: the WordPress loop can be intimidating.</h3>
                     <p>But don't let it get to you!</p>
                 </section>
 
                 <section>
                     <h3>Before we start getting into the loop, let's begin with an analogy</h3>
                     <p>Next time you're in your shower, look at your shampoo bottle and read the instructions. Some of them say "lather, rinse, repeat".</p>
-                    <p>What would happen if someone would take that literally?</p>
+                    <p>What would happen if someone took that literally?</p>
+                    <img src="/images/shampoo.jpg" alt="">
                 </section>
 
                 <section>
@@ -389,15 +478,10 @@
                 <section>
                     <h3>Let's start with just a basic loop and break down what's going on:</h3>
                     <pre>
-                        <code>
+                        <code class="php">
 &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         
- 	&lt;h2>
- 	&lt;a href="&lt;?php the_permalink(); ?>" 
-    title="Link to &lt;?php the_title_attribute(); ?>">
- 	&lt;?php the_title(); ?>
- 	&lt;/a>
- 	&lt;/h2>
+ 
 
  	&lt;div class="entry">
  		&lt;?php the_content(); ?>
@@ -417,39 +501,23 @@
                     <h3>Let's break this down one piece at a time...</h3>
                     <pre>
                 <code>
-                     &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+         &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 </code>
-                <p>This starts the Loop, it's saying "if you have some posts, go get them ready, we're going to to something with them</p>
             </pre>
+                    <p>This starts the Loop, it's saying "if you have some posts, go get them ready, we're going to to something with them</p>
                 </section>
 
-                <section>
-                    <pre>
-                   <code>
-                       	&lt;h2>&lt;a href="&lt;?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to &lt;?php the_title_attribute(); ?>">&lt;?php the_title(); ?>&lt;/a>&lt;/h2>
-                       	&lt;div class="entry">
- 		&lt;?php the_content(); ?>
- 	&lt;/div>
-                   </code>
-               </pre>
-                    <p>Here's what we're going to do with the posts. Apply these functions to them:</p>
-                    <ul>
-                        <li>the_permalink generates a link to where the post will be stored on a permanent basis</li>
-                        <li>the_title_attribute will show the post's title in a clean way(don't worry about what that means right now).</li>
-                        <li>the_title displays the post's title as "raw" text</li>
-                        <li>the_content displays the post's content, because it's wrapped in the div class "entry" in the loop, the content will be contained in that div when the page loads</li>
-                    </ul>
-                </section>
+                
 
                 <section>
                     <h3>Wrapping up the loop...</h3>
                     <pre>
                         <code>
-                             &lt;?php endwhile; else : ?>
+&lt;?php endwhile; else : ?>
 
- 	&lt;p>&lt;?php _e( 'Sorry, no posts matched your criteria.' ); ?>&lt;/p>
+&lt;p>&lt;?php _e( 'Sorry, no posts matched your criteria.' ); ?>&lt;/p>
 
- &lt;?php endif; ?>
+&lt;?php endif; ?>
                         </code>
                     </pre>
                     <ul>
@@ -462,6 +530,7 @@
 
                 <section>
                     <h3>Exercise: let's add a loop</h3>
+                    
                 </section>
 
                 <section>
@@ -473,13 +542,109 @@
                 <section>
                     <h3>Filtering the Loop</h3>
                     <p>Exercise: filtering posts in the loop</p>
+                    <ol>
+                        <li>Add 2 post categories</li>
+                        <li>Add 4 more posts, two in each category</li>
+                    </ol>
                 </section>
+                
+                <section>
+                    <h3>Now for the filter...</h3>
+                    <ol>
+                        <li>Add the category argument to the loop</li>
+                        <li>Refresh your page</li>
+                        <li>Pat self on back</li>
+                    </ol>
+                </section>
+                
+            </section>
+
+            <section><!-- Theming-->
+               
+     
+               <section>
+                   <h3>Theming</h3>    
+                <p>Where it all comes together...</p>
+               </section>
+  
+            
+                   <section>
+                    <h3>A theme is just a collection of a few PHP files and a CSS file</h3>
+                </section>
+
+                <section>
+                    <h3>Child themes</h3>
+                    <small>(and when to use them)</small>
+                    <br>
+                    <img src="/images/child-theme-.jpg" alt="">
+                </section>
+            
+            
+            <section>
+                <h3>WordPress has a hierarchy</h3>
+                <a href="http://wphierarchy.com/" target="_blank">http://wphierarchy.com/</a>
+            </section>
+            
+            </section><!--Theming-->
+
+            <section>
+                <h3>The long way is also the smartest way...</h3>
+                <p>Start with an HTML file and convert it</p>
+            </section>
+
+         
+
+
+
+            <section>
+                <h3>Handy plugins and tools</h3>
+            </section>
+
+            <section>
+                <h3>Use plugins carefully when developing with WordPress</h3>
+            </section>
+            <section>
+                <h3>Advanced Custom Fields</h3>
+                <a href="http://www.advancedcustomfields.com">The easiest way to add custom fields</a>
+            </section>
+            
+            <section>
+            <h3>Advanced Custom Fields (ACF)</h3>
+            <p>Everybody uses this thing... Here's why!</p>
+            </section>
+            
+            <section>
+                <h3>Let's say we want to add a description to our photos</h3>
+                <p>We could use the WordPress content section, but the formatting is wonky</p>
+                <small>WordPress wraps everything in a &lt;p> tag...</small>
+            </section>
+            
+            <section>
+                <h3>ACF to the rescue!</h3>
+                <p>It let's you make areas that do one thing really well for your WordPress theme</p>
+            </section>
+     
+            <section>
+                <h3>The truth is you don't need ACF to do this</h3>
+                <p>You can do all of this in the WordPress theme files like function.php, but it's not worth the effort.</p>
+            </section>
+                          
+            <section>
+                <h3>Metabox.io</h3>
+                <a href="https://metabox.io">For when you need to add lots of fields at once</a>
+                <small>The learning curve on this one is quite a bit steeper, you <strong>have</strong> to edit your functions.php files.</small>
             </section>
 
             <section>
                 <h3>Wrapping up</h3>
                 <quote>"Never memorize something that you can look up."</quote>
                 <p>Albert Einstein</p>
+            </section>
+
+            <section>
+                <h3>How strong is your Google-Fu?</h3>
+                <img src="/images/google-fu.jpg" alt="">
+                <small>You're almost never the first person to have this problem (no matter what the problem is)</small>
             </section>
 
             <section>
