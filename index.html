@@ -569,81 +569,520 @@ writeMessage(); ?>
                         <li>Refresh your page.</li>
                         <li>Pat yourself on the back.</li>
                     </ol>
-                </section>
+                </section><!--end day one-->
 
-            </section>
+          
+      
+           
+            </section><!--the loop-->
+           
+           <section><!--Review-->
+               <section>
+                   
+              <h3>Let's review</h3>
+              <p>What are the components of a WordPress installation?</p>
+               </section>
+    
+          <section>
+              <h3>What do we mean by coding safety?</h3>
+              <img src="images/hard-hat.jpg" alt="">
+          </section>
+                     
+                     <section>
+                         <h3>What resources are available for a new WordPress developer?</h3>
+                     </section>
+               
+                      <section>
+                          <h3>Exercise: Adding a nav menu to the footer</h3>
+                          <img src="images/Challenge-accepted.png" alt="">
+                      </section>
+          </section><!--review-->
+               
+            
+            <section><!--back to the loop-->
+               
+               <section>
+                <h3>Back to the loop!</h3>
+                   
+                <p>Who can summarize the loop?</p>
+                   
+               </section>
+                                                                             
+           <section>
+               <h3>How about a title?</h3>
+               <p>Let's try to make this thing a little less ugly...</p>
+           </section>
+           
+           <section>
+               <h3>So if the_content is how we displayed "the content"</h3>
+               <small>I think you see where this is headed...</small>
+           </section>
+           
+           <section>
+               <h3>The cleverly named the_title function!</h3>
+               <pre>
+               <code class="html">
+                   &lt;?php the_title(); ?>
+               </code>
+               </pre>
+           </section>
+           
+           <section>
+               <h3>Exercise: Adding the title to our loop</h3>
+               <p>Where do you think it should go?</p>
+           </section>
+           
+     
+    
+           <section>
+               <h3>Exercise</h3>
+               <p>Find out how to apply an HTML tag before the title</p>
+               <small>Hint:There's a tool I've been talking about this entire time...</small>
+           </section>
+           
+           <section>
+               <h3>Solution</h3>
+               <pre>
+                   <code class="html">
+   &lt;?php the_title( ' &lt;h3>', ' &lt;/h3>' ); ?>
+                   </code>
+               </pre>
+           </section>
+           
+           <section>
+               <h3>So text is cool...</h3>
+               <p>But what about those picture things that the kids are talking about these days?</p>
+           </section>
+           
+           <section>
+               <h3>Why don't we just put it in the content?</h3>
+               <p>A short demonstration...</p>
+           </section>
+           
+           <section>
+               <h3>Where should we look first?</h3>
+               <small>You know this one...</small>
+           </section>
+           
+           <section>
+               <h3>The poorly named post thumbnail function...</h3>
+               <pre>
+                   <code>
+                       &lt;?php the_post_thumbnail(); ?>
+                   </code>
+               </pre>
+               
+           </section>
+           
+        </section><!-- back to the loop-->                        
 
             <section><!-- Theming-->
-
 
                <section>
                 <h3>Theming</h3>
                 <p>Where it all comes together...</p>
+               <img src="images/whenaplancomestogether.jpg" alt="">
                </section>
-
-
+               
+               
               <section>
-                <h3>A theme is just a collection of a few PHP files and a CSS file.</h3>
+                <h3>A theme is just a collection of a few PHP files and a CSS file</h3>
+                <p>You can buy them, use a free one, or make your own</p>
               </section>
 
-              <section>
+            <section>
+                <h3>What makes themes so cool?</h3>
+                <p>A big change in a short period of time...</p>
+                <img src="images/quick-change.gif" alt="">
+            </section>
+            
+            <section>
+            <h3>Why not just use a free theme or why not just buy a theme?</h3>
+            <p>It all comes down to what you're trying to accomplish...</p>
+            </section>
+
+            
+            <section>
+                <h3>A pre-made theme is like a pre&#x2011;made suit</h3>
+                <p>The tailor made stuff is "better" but costs more time/money.</p>
+            </section>
+            
+             <section>
                   <h3>Child themes</h3>
-                  <small>(and when to use them)</small>
+                  <p>A happy compromise</p>
                   <br>
                   <img src="images/child-theme-.jpg" alt="">
               </section>
 
-
-            <section>
-                <h3>WordPress has a hierarchy</h3>
-                <a href="http://wphierarchy.com/" target="_blank">http://wphierarchy.com/</a>
+              <section>
+                  <h3>Making a child theme</h3>
+                  <p>Randy was right</p>
+                  <small>He usually is...</small>
+              </section>
+              
+              <section>
+                  <h3>Always use a child theme if you're starting from the WordPress theme directory</h3>
+                  <p>This is really important</p>
+                  <small>And now for a quick note about security</small>
+              </section>
+              
+              
+              <section>
+              <h3>I'm going to cover how to make a child theme a bit later</h3>
+              <p>I assure you, this will all make sense at some point.</p>
+              </section>
+               
+               <section>
+                   <h3>In order to understand theming, you have to understand how WordPress runs "under the hood"</h3>
+              <ul>
+                  <li>header.php</li>
+                  <li>a body file </li>
+                  <li>footer.php</li>
+              </ul>
+               </section>
+               
+               <section>
+                   <h3>Let's start at the top</h3>
+                   <p>header.php often includes the nav, but it's also responsible for some other really important stuff like our css files.</p>
+               </section>
+               
+               <section>
+                   <h3>Example: WordPress uses a system called wp_enqueue_styles</h3>
+                   <p>This is much better than the old way of just dumping a link to your CSS file in the header.</p>
+               </section>
+               
+               <section>
+                   <h3>The footer has important stuff to do too</h3>
+                   <p>If you open it, you have to close it...</p>
+               </section>
+               
+               <section>
+                   <h3>The footer is also where javascript is best enqueued</h3>
+               </section>
+               
+               <section>
+                   <h3>Let's talk about what I call body files</h3>
+               </section>
+               
+               
+               <section>
+                   <h3>There are special file names for WordPress that can make a big impact on your theme.</h3>
+               </section>
+               
+                   <section>
+                       <h3>Body files are what I call files that fill in the main content of a page</h3>
+                       <p>When you request a page, WordPress looks for the file that best fits that page based on its slug or ID</p>
+                   </section>       
+                      
+                    <section>
+                        <h3>A great example of this is a category page</h3>
+                    </section> 
+                    
+                    <section>
+                        <h3>Let's say that you want to have a news section for your site...</h3>
+                    </section>
+                                                             
+                    <section>
+                        <h3>Exercise: making a category page</h3>
+                        <p>First create a new category</p>
+                        <p>Be sure to give your category a slug</p>
+                        <small>Aside: do we know about slugs?</small>
+                    </section>
+                        
+                    <section>
+                        <h3>Make a new category template file</h3>
+                        <p>Start with the existing category.php</p>
+                        <p>Make a copy in a new file called category-(your-slug-here).php</p>
+                    <p>Add an h3 tag somewhere in your category page that will change the content.</p>
+                    </section>
+                        
+                    <section>
+                   <h3>The main page of your website</h3>
+                   <p>Is it static or is it changing?</p>
+                   <small>Cool bonus question: if it's a blog, what feature does it have to have?</small>
+               </section>
+               
+                     <section>
+                         <h3>The difference between home.php and front-page.php</h3>
+                         <p>I hate how they named these...</p>
+                     </section>  
+                     
+                         <section>
+                             <h3>home.php is for a static page</h3>
+                             <small>unless you want to mess with it (but don't)</small>
+                         </section>
+                         
+                        <section>
+                            <h3>front-page.php is for blog posts</h3>
+                            <small>Unless you (still) want to mess with it(still dont')</small>
+                        </section>    
+                        
+               
+               <section>
+                <h3>The WordPress hierarchy</h3>
+               <p>The cool thing about this is, you can just build your site with what you need!</p>
+               <a href="http://wphierarchy.com" target="_blank">WP Hierarchy</a>
             </section>
 
+             <section>
+                 <h3>Always make sure that your development copy is as close to your live copy as possible</h3>
+             </section>
+             
+             <section>
+                 <h3>Review carefully and have someone else check it out</h3>
+             </section>
+             
+              <section>
+                  <h3>Warning!</h3>
+                  <p>The files you don't ever touch in your WordPress site</p>
+                  <br />
+                  <p>Just don't leave your theme folder</p>
+                  <img src="images/Warning.png" alt="">
+              </section>
+
+           
             </section><!--Theming-->
 
-            <section>
+           
+    
+            <section><!--Planning and ideas-->
+              
+              
+              <section>
+                  <h3>Planning your theme</h3>
+                  <img src="images/plan.jpg" alt="">
+              </section>
+                
+               <section>
+                   <h3>Start with the goal in mind</h3>
+                   <p>Great questions to ask:</p>
+                   <ul>
+                       <li>How many page layouts will I need?</li>
+                       <li>What special features will be involved?</li>
+                       <li>How much code am I prepared to write?</li>
+                   </ul>
+               </section>
+              
+              
+               <section>
                 <h3>The long way is also the smartest way...</h3>
-                <p>Start with an HTML file and convert it!</p>
-            </section>
-            <section>
+                <p>Start with an HTML file and convert it!</p>       
+               </section>
+             
+             <section>
+                 <h3>Building a new page template</h3>
+                 <p>Let's start by adding a new page</p>
+             </section>
+             
+             <section>
+                 <h3>The easiest way is to start with a good foundation</h3>
+                 <p>Let's copy an existing one, and start messing with it...</p>
+             </section>
+             
+             <section>
+                 <h3>Exercise</h3>
+                 <p>Find the file in your site files called template-demo.php</p>
+             </section>
+              
               <section>
-                  <h3>Handy plugins and tools</h3>
-                  <p>Use plugins carefully when developing with WordPress!</p>
+                  <h3>Exercise: Let's make a new page template file</h3>
+               <ul>
+                   <li>Grab the existing template file</li>
+                   <li>Paste it into a new file</li>
+                   <li>Update the template name (<strong>important</strong>)</li>
+                   <li>Add some html somewhere on your template, and save it</li>
+                   <li>High five your neighbor</li>
+               </ul>
               </section>
-              <section>
-                  <h3>Advanced Custom Fields (ACF)</h3>
-                  <a href="http://www.advancedcustomfields.com">The easiest way to add custom fields</a>
-              <p>Everybody uses this thing... Here's why!</p>
+               
+            
+   
+                        
+                        <section>
+                            <h3>Exercise: Make a new category template</h3>
+                            
+                        </section>
+                       <section>
+                  <h3>Custom post types</h3>
+                  <p>Why? No seriously... why?!?</p>
               </section>
-
+              
               <section>
+                  <h3>Remember your target audience</h3>
+                  <p>If you're making a site just for yourself, you might not need this. But we have to go back to the "build for your parents" principle.</p>
+              </section>
+              
+              <section>
+                  <h3>Exercise: adding a custom post type</h3>
+                  <p>Open functions.php in your website folder.There's a custom post type already registered in your theme.</p>
+              </section>
+              
+              <section>
+                  <h3>Custom post types have a lot of options</h3>
+                <p>My favorite thing is using them with custom fields</p>
+              </section>
+              
+              <section>
+                  <h3>What are custom fields?</h3>
+                  <p>WordPress is flexible!</p>
+              </section>
+              
+              <section>
+                  <h3>I'm not going to cover the Advanced Custom Fields plugin</h3>
+                  <p>This is due to some recent developments...</p>
+              </section>
+              
+              <section>
+                  <h3>Ok, let's actually use these things</h3>
+                  <p>Did you know that WordPress is keeping things from you?</p>
+                  <small>It's ok. It means well.</small>
+              </section>
+              
+              <section>
+                  <h3>Using the custom field</h3>
+                  <pre>
+                      <code>
+                           &lt;?php the_meta(); ?>
+                      </code>
+                  </pre>
+              </section>
+              
+                            <section>
                   <h3>Let's say we want to add a description to our photos</h3>
                   <p>We could use the WordPress content section, but the formatting is wonky.</p>
                   <small>WordPress wraps everything in a &lt;p> tag...</small>
               </section>
-
+              
               <section>
-                  <h3>ACF to the rescue!</h3>
-                  <p>It lets you make areas that do one thing really well for your WordPress theme.</p>
+                  <h3>More about functions.php</h3>
+                  <p>I think of it as a safe place.</p>
               </section>
-
+              
               <section>
-                  <h3>The truth is, you don't need ACF to do this.</h3>
-                  <p>You can do all of this in the WordPress theme files like <code>function.php</code>, but it's not worth the effort.</p>
+                  <h3>Remember when I talked about child themes earlier?</h3>
+                  <p>Functions.php is a big part of that</p>
               </section>
-
+              
               <section>
-                  <h3>Metabox.io</h3>
-                  <a href="https://metabox.io">For when you need to add lots of fields at once</a>
-                  <small>The learning curve on this one is quite a bit steeper, you <strong>have</strong> to edit your <code>functions.php</code> file.</small>
+                  <h3>Exercise: making a child theme</h3>
+                  <p>Start by making a folder in the same directory as your existing theme. </p>
+                  <strong>Do not put your child theme inside of your main theme.</strong>
               </section>
+              
+              <section>
+                  <h3>Now we need to enque the parent theme's stylesheet</h3>
+                  <pre>
+                      <code class="html">
+                          &lt?php
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+function theme_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+
+}
+?>
+                      </code>
+                  </pre>
+              </section>
+              
+              <section>
+                  <h3>Now let's make a new CSS file for our child theme</h3>
+                  <p>We have to add the comment at the top</p>
+                  <pre>
+                      <code class="html">
+                          /*
+ Theme Name:   Sample Theme Child
+ Theme URI:    http://yourwebsite.com/
+ Description:  My first child theme, based on Sample Theme
+ Author:       Your Name
+ Author URI:   Your Web Site
+ Template:     html5blank
+ Version:      1.0.0
+ Tags:         
+*/
+                      </code>
+                  </pre>
+              </section>
+              
             </section>
-
+            </section><!--planning-->
+            
+            <section><!-- Workflow-->
+                               
+               
+               <section>
+                   <h3>A happy developer's workflow</h3>
+                   <img src="images/WordPress-Flow.png" alt="">
+               </section>
+               
+                 <section>
+                   <h3>How a smart dev workflow is set up</h3>
+                   <p>Like a hall of mirrors</p>
+                   <img src="images/mirror-scene.jpg" alt="">
+               </section> 
+               
+               <section>
+                   <h3>Core principles</h3>
+                   <ol>
+                       <li>Never code live on the server</li>
+                       <li>Make your dev copy as close to your live copy as possible</li>
+                   </ol>
+               </section>
+     
+            </section><!--workflow-->
+            
             <section>
+              <section>
+                  <h3>Handy tools and plugins </h3>
+                  <p>Use plugins carefully when developing with WordPress!</p>
+              </section>
+              
+              <section>
+                  <h3>Why shouldn't I just add a plugin for every problem that comes up?</h3>
+                  <quote>"A WordPress Plugin big enough to give you everything you want, is a WordPress Plugin big enough to take away everything that you have."</quote> <p>-Thomas Jefferson</p>
+                  <img src="images/thomas_jefferson_portrait.jpg" alt="">
+              </section>
+              
+              <section>
+                  <h3>That doesn't mean to <em>never</em> use plugins</h3>
+              </section>
+              
+              <section>
+                  <h3>Things that I <strong>always</strong> reccomend a plugin for:</h3>
+                  <ul>
+                      <li>Forms</li>
+                      <li>Calendars</li>
+                      <li>Anything e-commerce/credit card processing</li>
+                  </ul>
+                  
+                  <p>There's no shame in letting an expert handle some stuff. Even professional developers use pre-made plugins.</p>
+              </section>
+              
+                        
+                         
+              
+              <section>
+                  <h3>WordPress debug mode</h3>
+                  <p>This is an exception to my "Don't leave your theme files" rule</p>
+                  
+              </section>
+   
+              <section>
+                  <h3>We need to open wp-config.php</h3>
+                  <pre>
+                      <code class="html">
+                          define( 'WP_DEBUG', true );
+                      </code>
+                  </pre>
+              </section>
+      
+        </section>
+            <section>
+               <section>
                 <h3>Wrapping up</h3>
                 <quote>"Never memorize something that you can look up."</quote>
                 <p>Albert Einstein</p>
-            </section>
+                   
+               </section>
 
             <section>
                 <h3>How strong is your Google-Fu?</h3>
@@ -666,6 +1105,7 @@ writeMessage(); ?>
                 </ul>
             </section>
 
+            </section><!--wrapping up-->
 
             <!-- Upcoming Events -->
 <section>
