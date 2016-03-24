@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
     <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -72,7 +72,7 @@
 
             <section>
                 <h3>Who am I and why should you listen to me?</h3>
-                <p>I'm a full time Front End developer at <a href="push22.com">Push 22</a> who has been working with WordPress for about 4 years.</p>
+                <p>I'm a full time Front End developer at <a href="http://push22.com">Push 22</a> who has been working with WordPress for about 4 years.</p>
                 <p>I'm not a computer scientist. My background is actually in rhetoric, philosophy, and biology. I learned WordPress through trial and error (mostly error), insane deadlines, and lots of Googling.</p>
 
 
@@ -209,7 +209,7 @@
                     <p>Let's use our first WordPress function!</p>
                     <p>Today we're going to start with one of the most common: <code>wp_nav_menu</code>.</p>
                     <p>Let's start by looking at that function on the WordPress codex.</p>
-                    <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="_blank"> wp-nav-menu</a>
+                    <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="_blank">wp_nav_menu</a>
                 </section>
 
                <section>
@@ -223,7 +223,7 @@
                    <p>Open <code>header.php</code>.</p>
                    <pre>
                        <code class="html">
-&lt;? php wp_nav_menu (); ?>
+&lt;?php wp_nav_menu (); ?>
                        </code>
                    </pre>
                </section>
@@ -233,7 +233,7 @@
                     <h3>Let's break down that function we just used:</h3>
                     <pre>
                        <code>
-&lt;? php wp_nav_menu (); ?>
+&lt;?php wp_nav_menu (); ?>
                        </code>
 
                    </pre>
@@ -305,7 +305,7 @@
 
                     <pre>
                         <code>
-&lt;?php echo "I'm some PHP" ;?>
+&lt;?php echo "I'm some PHP"; ?>
                         </code>
                       </pre>
 
@@ -323,7 +323,7 @@
 
                     <pre>
                         <code>
-&lt;?php echo "I'm some PHP" ;?>
+&lt;?php echo "I'm some PHP"; ?>
                         </code>
                       </pre>
                     <ul>
@@ -497,13 +497,13 @@ writeMessage(); ?>
                         <code class="php">
 &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
- 	&lt;div class="entry">
- 		&lt;?php the_content(); ?>
- 	&lt;/div>
+  &lt;div class="entry">
+    &lt;?php the_content(); ?>
+  &lt;/div>
 
 &lt;?php endwhile; else : ?>
 
- 	&lt;p>&lt;?php _e( 'Sorry, no posts matched your criteria.' ); ?>&lt;/p>
+  &lt;p>&lt;?php _e( 'Sorry, no posts matched your criteria.' ); ?>&lt;/p>
 
 &lt;?php endif; ?>
                         </code>
@@ -1216,7 +1216,7 @@ function theme_enqueue_styles() {
                         return !!document.body.classList;
                     }
                 }
-				]
+        ]
         });
     </script>
 
